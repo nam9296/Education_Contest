@@ -1,5 +1,0 @@
-getwd()
-lib1 <- read.csv('libb.csv', header = T, )
-library(dplyr)
-newlib <- lib1 %>% filter(도서관.구분명 == '공공도서관') %>% select(c(도서관명, 위도,경도)) 
-write.csv(newlib, "newlib.csv", row.names = F, fileEncoding = "euc-kr")
